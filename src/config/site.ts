@@ -1,0 +1,98 @@
+import type { NavLink } from "@/lib/types";
+
+export const siteConfig = {
+  name: "Setu Relocation",
+  shortName: "Setu",
+  wordmark: "setu",
+  legalName: "Setu Relocation (Demo Template)",
+  tagline: "A better way between homes.",
+  description:
+    "A premium packers and movers website template for household, local, domestic and office relocations across India.",
+  demo: true,
+  url: "https://setu-relocation.example.com",
+  locale: "en_IN",
+  colors: {
+    primary: "#0B132B",
+    accent: "#5B4CFF",
+    neutral: "#F0F4F8",
+    secondary: "#E2E9F3",
+    paper: "#F0F4F8",
+    paperDeep: "#E2E9F3",
+    surface: "#FFFFFF",
+    ink: "#0B132B",
+    inkSoft: "#2D3A58",
+    muted: "#5D6F8D",
+    line: "#D3DFEE",
+    accentStrong: "#4338CA",
+    accentSoft: "rgba(91, 76, 255, 0.12)",
+    deep: "#070D1E",
+  },
+  fonts: {
+    display: "var(--font-newsreader)",
+    sans: "var(--font-manrope)",
+  },
+  contact: {
+    phone: "+91 98765 43210",
+    phoneHref: "tel:+919876543210",
+    whatsapp: "919876543210",
+    email: "hello@seturelocation.example",
+    emailHref: "mailto:hello@seturelocation.example",
+    address: "Level 2, 18 Turner Road, Bandra West, Mumbai 400050",
+    addressShort: "Bandra West, Mumbai",
+    hours: "Mon–Sat, 8:00 am – 8:00 pm IST",
+    hoursShort: "Mon–Sat, 8am–8pm",
+    responseNote: "We reply to enquiries within one working day.",
+    demoNote:
+      "This is a demonstration website. Company details, prices and testimonials are illustrative and must be replaced before launch.",
+  },
+  social: {
+    instagram: "",
+    linkedin: "",
+    facebook: "",
+  },
+  navigation: [
+    { label: "Services", href: "/services" },
+    { label: "How it works", href: "/#process" },
+    { label: "Coverage", href: "/#coverage" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
+  ] satisfies NavLink[],
+  footerNavigation: {
+    move: [
+      { label: "Household shifting", href: "/services/household-shifting" },
+      { label: "Local shifting", href: "/services/local-shifting" },
+      { label: "Domestic relocation", href: "/services/domestic-relocation" },
+      { label: "Office relocation", href: "/services/office-relocation" },
+      { label: "Packing & unpacking", href: "/services/packing-and-unpacking" },
+      { label: "Vehicle transport", href: "/services/vehicle-transport" },
+    ],
+    company: [
+      { label: "About Setu", href: "/about" },
+      { label: "All services", href: "/services" },
+      { label: "How it works", href: "/#process" },
+      { label: "Coverage", href: "/#coverage" },
+      { label: "Contact", href: "/contact" },
+    ],
+    support: [
+      { label: "Get a quote", href: "/get-a-quote" },
+      { label: "Track a move", href: "/track" },
+      { label: "Privacy policy", href: "/privacy-policy" },
+      { label: "Terms & conditions", href: "/terms-and-conditions" },
+    ],
+  },
+  seo: {
+    titleTemplate: "%s | Setu Relocation",
+    defaultTitle: "Setu Relocation — Packers & Movers in India",
+    defaultDescription:
+      "Household and office relocation across India. A written move plan, one move manager, trained packing crews and illustrative online estimates.",
+    ogImage: "/images/og-home.jpg",
+    keywords: [
+      "packers and movers",
+      "household shifting",
+      "office relocation",
+      "domestic relocation India",
+      "local shifting",
+      "packing and moving",
+    ],
+  },
+} as const;
